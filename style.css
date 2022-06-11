@@ -701,7 +701,7 @@ footer .container .noi-dung.about p{
 }
 @media  (max-width: 768px){
     footer{
-        padding: 40px;
+        padding: 9px;
              }
     footer .container{
         flex-direction: column;
