@@ -561,8 +561,8 @@ footer .container{
     flex-direction: row;
 }
 footer .container .noi-dung{
-    margin-right: 30px;
-    padding: 39px;
+   
+    padding: 13px;
 }
 /*
 footer  .container .noi-dung.about{
@@ -708,7 +708,7 @@ footer .container .noi-dung.about p{
     }
     footer .container .noi-dung{
         margin-right: 0;
-        margin-bottom: 40px;
+       
     }
     footer .container, .noi-dung.about, .links, .contact{
         width: 100%;
