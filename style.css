@@ -61,7 +61,7 @@
         text-transform: uppercase;
     }
 
-    .btn{
+    .btn-em{
         margin-top: 1rem;
         display: inline-block;
         padding:.9rem 3rem;
@@ -211,7 +211,7 @@
         min-height: 100vh;
         display: flex;
         align-items: center;
-        background:url(/pexels-thiago-japyassu-4071887.jpg) no-repeat;
+        background:url(/background.jpg) no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -335,6 +335,7 @@
         padding-left:10px;
 
     }
+    
 
     .products .box-container .box .icons a{
         height: 5rem;
@@ -361,7 +362,6 @@
     .products .box-container .box .content h3{
         color:#544f4f;
         font-size: 2.5rem;
-        padding: 10px;
     }
 
     .products .box-container .box .content .stars{
@@ -541,63 +541,185 @@
         color:#ccc;
         padding:1rem 0;
     }
-
-    .footer{
-        background:var(--black);
-        text-align: center;
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px 109px;
+    background: #13131a;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+footer .container{
+    display: flex;
+    
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+footer .container .noi-dung{
+    margin-right: 30px;
+    padding: 39px;
+}
+/*
+footer  .container .noi-dung.about{
+    width:40%;
+    
+}
+*/
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    color: #999;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+   position: relative;
+   width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top:16px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+.btn--primary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 24px;
+}
+.btn--primary:hover {
+    background: #f00;
+}
+.btn--primary:active {
+    background: #f00;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+.form__field {
+    width: 90%;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+    padding: 8px 4px;
+}
+@media  (max-width: 768px){
+    footer{
+        padding: 40px;
+             }
+    footer .container{
+        flex-direction: column;
     }
-
-    .footer .share{
-        padding:1rem 0;
+    footer .container .noi-dung{
+        margin-right: 0;
+        margin-bottom: 40px;
     }
-
-    .footer .share a{
-        height: 5rem;
-        width: 5rem;
-        line-height: 5rem;
-        font-size: 2rem;
-        color:#fff;
-        border:var(--border);
-        margin:.3rem;
-        border-radius: 50%;
+    footer .container, .noi-dung.about, .links, .contact{
+        width: 100%;
     }
-
-    .footer .share a:hover{
-        background-color: var(--main-color);
-    }
-
-    .footer .links{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding:2rem 0;
-        gap:1rem;
-    }
-
-    .footer .links a{
-        padding:.7rem 2rem;
-        color:#fff;
-        border:var(--border);
-        font-size: 2rem;
-    }
-
-    .footer .links a:hover{
-        background:var(--main-color);
-    }
-
-    .footer .credit{
-        font-size: 2rem;
-        color:#fff;
-        font-weight: lighter;
-        padding:1.5rem;
-    }
-
-    .footer .credit span{
-        color:var(--main-color);
-    }
-    .fa-sitemap:before {
-        padding:5px;
-    }
+}
+.credit {
+    background-color: #13131a;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+    
 
 
 
