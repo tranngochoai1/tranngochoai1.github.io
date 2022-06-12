@@ -362,7 +362,6 @@
     .products .box-container .box .content h3{
         color:#544f4f;
         font-size: 2.5rem;
-        padding:5px;
     }
 
     .products .box-container .box .content .stars{
@@ -376,6 +375,53 @@
     .products .box-container .box .content .price strong {
         color: #fd475a;
     
+    }
+  .chuoi-open {
+        padding: 11px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 12px 14px;
+    }
+     .products .chuoi-open  .box-open {
+        display:inline-block;
+        padding: 10px 15px;
+        background: #cc9966;
+        box-shadow: 0 2px 6px #00000029;
+        border-radius: 8px;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        color: rgb(255, 251, 251);
+        width: 265px;
+        
+        text-align: center;
+        margin: 10px 15px 15px 0;
+     }
+    .checkoptions {
+        display: block;
+        
+        border-radius: 10px;
+        padding: 6px 8px;
+        box-shadow: rgb(62 0 0 / 16%) 0px 4px 6px;
+        color: #fff;
+        border: none;
+        font-size: 12px;
+        width: 110px;
+        position: relative
+    }
+    .checkoptions .textkt {
+        color: white;
+        text-align: center;
+        display: inline-block;
+
+    }
+  .fa-truck:before {
+        font-size: 30px;
+    }
+
+    
+    .checkoptions .iconcheck {
+        color: white;
     }
 
     .products .box-container .box .content .price{
@@ -561,7 +607,7 @@ footer .container{
     flex-direction: row;
 }
 footer .container .noi-dung{
-   
+    
     padding: 13px;
 }
 /*
@@ -701,14 +747,14 @@ footer .container .noi-dung.about p{
 }
 @media  (max-width: 768px){
     footer{
-        padding: 9px;
+        padding: 11px;
              }
     footer .container{
         flex-direction: column;
     }
     footer .container .noi-dung{
         margin-right: 0;
-       
+     
     }
     footer .container, .noi-dung.about, .links, .contact{
         width: 100%;
@@ -753,6 +799,10 @@ footer .container .noi-dung.about p{
     }
 
     @media (max-width:1024px){
+        .products .chuoi-open{
+            display:block;
+            text-align: center;
+        }
 
         #menu-btn{
             display: inline-block;
